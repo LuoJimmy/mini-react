@@ -11,5 +11,5 @@ before_install:
 script:
   - parcel build ./index.js
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t LuoJimmy/mini-react:latest .
-  - docker push LuoJimmy/mini-react:latest
+  - docker build -t luojimmy/mini-react:latest .
+  - docker push luojimmy/mini-react:latest
